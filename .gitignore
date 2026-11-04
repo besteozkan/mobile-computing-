@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+.vscode/
+*.iml
+build/
+.gradle/
+local.properties
+node_modules/
+Pods/
+DerivedData/
