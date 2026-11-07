@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "SkyCheck",
+    "slug": "skycheck-weather",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SkyCheck uses your location to show the weather where you are."
+        }
+      ]
+    ],
+    "android": {
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    }
+  }
+}
