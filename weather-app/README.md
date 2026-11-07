@@ -1,4 +1,4 @@
-# SkyCheck – Weather App (React Native)
+# SkyCheck – Weather App (React + React Native)
 
 Mobile Computing course project. Shows current weather and a 5-day forecast
 for your GPS location or any city you search.
@@ -21,10 +21,15 @@ for your GPS location or any city you search.
 3. Install **Expo Go** on your phone and scan the QR code
    (or press `a` for an Android emulator).
 
-## Structure
+## Structure (React components + custom hook)
 ```
-App.js               UI, state, location logic
-src/api.js           Network requests (Open-Meteo, Nominatim)
-src/storage.js       Local cache (AsyncStorage)
-src/weatherCodes.js  Weather code -> label/icon
+App.js                              Root React component (composes the screen)
+src/hooks/useWeather.js             Custom React hook: state, location, network, cache
+src/components/SearchBar.js         City search input + results
+src/components/CurrentWeatherCard.js  Current weather card
+src/components/ForecastList.js      5-day forecast list
+src/components/StatusMessages.js    Error text + offline banner
+src/api.js                          Network requests (Open-Meteo, Nominatim)
+src/storage.js                      Local cache (AsyncStorage)
+src/weatherCodes.js                 Weather code -> label/icon
 ```
